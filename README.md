@@ -1,19 +1,5 @@
-# MyApp
+This application is companion application for the blog post
+[Using Parcel as Build Tool for Phoenix](https://blog.cvkmohan.com/using-parcel-as-build-tool-for-phoenix)
 
-To start your Phoenix server:
-
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+Though `phoenix` comes with `esbuild` as the default build tool for asset management, there are certain cases where you would need the modern build tools like `vite` or `parcel`.
+This article is a code walk-through where we replace the `esbuild` with `parcel` and integrate `tailwindcss` into the application.
