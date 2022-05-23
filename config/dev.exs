@@ -25,8 +25,7 @@ config :my_app, MyAppWeb.Endpoint,
   debug_errors: true,
   secret_key_base: "CMmB5s8c06yY4kRgLInDSCqqc62LrDzmvFcnBlDWiNbZBXkv4oLUCa3pjQlgVGCj",
   watchers: [
-    # Start the esbuild watcher by calling Esbuild.install_and_run(:default, args)
-    esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]}
+    yarn: ["run", "watch", cd: Path.expand("../assets", __DIR__)]
   ]
 
 # ## SSL Support

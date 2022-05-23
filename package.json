@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "watch": "parcel watch assets/js/app.js --dist-dir priv/static/assets",
+    "build": "parcel build assets/js/app.js --dist-dir priv/static/assets"
+  },
+  "devDependencies": {
+    "parcel": "^2.5.0",
+    "postcss": "^8.0.0",
+    "postcss-import": "^14.1.0",
+    "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "phoenix": "./deps/phoenix",
+    "phoenix_html": "./deps/phoenix_html",
+    "phoenix_live_view": "./deps/phoenix_live_view"
+  }
+}
